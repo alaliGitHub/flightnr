@@ -102,5 +102,6 @@ httpServer.listen(http_port, listening_address, function() {
 // Start the runtime
 RED.start().then(function() {
   console.info("------ Engine started! ------");
+  console.log(`Listening on port ${http_port}`)
 });
 
